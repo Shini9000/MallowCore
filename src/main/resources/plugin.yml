@@ -1,0 +1,8 @@
+name: MallowCore
+version: '1.0'
+main: net.shini9000.mallowCore.MallowCore
+api-version: '1.21'
+load: STARTUP
+authors: [ Shini9000 ]
+description: MURPG Core
+website: https://github.com/shini9000/mucore
