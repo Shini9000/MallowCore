@@ -1,0 +1,59 @@
+config-version: 1.0.1
+
+# Messages configuration for MUCore
+
+Commands:
+  Reload: "&cYou reloaded the config!"
+  NoPerm: "&cYou don''t have permission to do this!"
+  Help:
+    Reload: "&dReloads the config"
+    Eco:
+      Usage: "&aEco &6/rpg eco <add/subtract/set/give/get> <amount> <target>"
+    Stats:
+      Usage: "&bStats &6/rpg stats <add/subtract/set/give/get> <target> <type> <amount>"
+    Clan:
+      Usage: "&eClan &6/rpg clan <list/create/disband/addmember/removemember/promote/demote/motd> <clanID> <userName>"
+      List:
+        Usage: "&eClan &6/rpg clan list"
+      Create:
+        Usage: "&eClan &6/rpg clan create"
+      Disband:
+        Usage: "&eClan &6/rpg clan disband"
+      AddMember:
+        Usage: "&eClan &6/rpg clan addmember <playerName>"
+      RemoveMember:
+        Usage: "&eClan &6/rpg clan removemember <playerName>"
+      Promote:
+        Usage: "&eClan &6/rpg clan promote <playerName>"
+      Demote:
+        Usage: "&eClan &6/rpg clan demote <playerName>"
+      Motd:
+        Usage: "&eClan &6/rpg clan motd"
+
+Listeners:
+  Join: "&2+ %player%"
+  Leave: "&4- %player%"
+  FirstJoin: "&aPlease welcome &6%player% &ato the adventure"
+  10: "&6&l%player% has joined for the 10th time!"
+  25: "&6&l%player% has joined for the 25th time!"
+  50: "&6&l%player% has joined for the 50th time!"
+  100: "&6&l%player% has joined for the 100th time!!"
+  250: "&6&l%player% has joined for the 250th time!!"
+  500: "&6&l%player% has joined for the 500th time!!!"
+  1000: "&6&l%player% has joined for the 1000th time!!!!"
+
+Subcommands:
+  Title: "&7Here is a quick command rundown!"
+  Commands:
+    - "Eco"
+    - "Reset"
+    - "Other"
+    - "SomethingElse"
+
+  Clan:
+    Help: ""
+    Create: "&aYou have created clan &d%mucore.clan.name%&a!"
+    List: ""
+    AddUser: "&aYou have added &6%player% &ato clan &b%mucore.clan.name%&a!"
+    RemoveUser: "&cYou have removed &6%player% &cfrom clan &b%mucore.clan.name%&c!"
+    Disband: "&cYou have disbanded clan &b%mucore.clan.name%&c!"
